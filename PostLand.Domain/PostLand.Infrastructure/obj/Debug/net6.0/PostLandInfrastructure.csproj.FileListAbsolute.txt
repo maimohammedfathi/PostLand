@@ -1,0 +1,4 @@
+D:\PostLand\PostLand.Domain\PostLand.Infrastructure\obj\Debug\net6.0\PostLandInfrastructure.GeneratedMSBuildEditorConfig.editorconfig
+D:\PostLand\PostLand.Domain\PostLand.Infrastructure\obj\Debug\net6.0\PostLandInfrastructure.AssemblyInfoInputs.cache
+D:\PostLand\PostLand.Domain\PostLand.Infrastructure\obj\Debug\net6.0\PostLandInfrastructure.AssemblyInfo.cs
+D:\PostLand\PostLand.Domain\PostLand.Infrastructure\obj\Debug\net6.0\PostLandInfrastructure.csproj.CoreCompileInputs.cache

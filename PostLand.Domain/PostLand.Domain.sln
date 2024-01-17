@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34031.279
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PostLandDomain", "PostLand.Domain\PostLandDomain.csproj", "{F2511991-747C-4AC6-9208-44DD5E028A60}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{F76A35E0-1634-42E6-9DDA-450AD6850AD6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{8D5BCFD7-4CEC-451D-8D0B-EEAF55045C6D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{B260AED2-F5D8-4E79-823B-BF0F717A3176}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UI", "UI", "{785E90E2-3933-400B-8E72-D2CB51D675E6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "API", "API", "{B930B2E3-C896-449C-B0EB-183F2D9E24D1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PostLandApplication", "PostLand.Application\PostLandApplication.csproj", "{EC11DDFB-5E41-4FAD-BD2C-1D7786FBB409}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PostLandInfrastructure", "PostLand.Infrastructure\PostLandInfrastructure.csproj", "{61782FEE-FDEB-4334-BF08-7431B22E4203}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F2511991-747C-4AC6-9208-44DD5E028A60}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2511991-747C-4AC6-9208-44DD5E028A60}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2511991-747C-4AC6-9208-44DD5E028A60}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2511991-747C-4AC6-9208-44DD5E028A60}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC11DDFB-5E41-4FAD-BD2C-1D7786FBB409}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC11DDFB-5E41-4FAD-BD2C-1D7786FBB409}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC11DDFB-5E41-4FAD-BD2C-1D7786FBB409}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC11DDFB-5E41-4FAD-BD2C-1D7786FBB409}.Release|Any CPU.Build.0 = Release|Any CPU
+		{61782FEE-FDEB-4334-BF08-7431B22E4203}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61782FEE-FDEB-4334-BF08-7431B22E4203}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61782FEE-FDEB-4334-BF08-7431B22E4203}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61782FEE-FDEB-4334-BF08-7431B22E4203}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F2511991-747C-4AC6-9208-44DD5E028A60} = {B260AED2-F5D8-4E79-823B-BF0F717A3176}
+		{B260AED2-F5D8-4E79-823B-BF0F717A3176} = {F76A35E0-1634-42E6-9DDA-450AD6850AD6}
+		{785E90E2-3933-400B-8E72-D2CB51D675E6} = {F76A35E0-1634-42E6-9DDA-450AD6850AD6}
+		{B930B2E3-C896-449C-B0EB-183F2D9E24D1} = {F76A35E0-1634-42E6-9DDA-450AD6850AD6}
+		{EC11DDFB-5E41-4FAD-BD2C-1D7786FBB409} = {B260AED2-F5D8-4E79-823B-BF0F717A3176}
+		{61782FEE-FDEB-4334-BF08-7431B22E4203} = {B260AED2-F5D8-4E79-823B-BF0F717A3176}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {341E2BA2-61B1-48AE-93C4-42E9E7F26C0F}
+	EndGlobalSection
+EndGlobal

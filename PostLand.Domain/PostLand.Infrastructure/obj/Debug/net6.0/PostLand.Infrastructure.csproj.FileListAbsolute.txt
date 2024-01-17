@@ -1,0 +1,5 @@
+D:\PostLand\PostLand.Domain\PostLand.Infrastructure\obj\Debug\net6.0\PostLand.Infrastructure.csproj.AssemblyReference.cache
+D:\PostLand\PostLand.Domain\PostLand.Infrastructure\obj\Debug\net6.0\PostLand.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+D:\PostLand\PostLand.Domain\PostLand.Infrastructure\obj\Debug\net6.0\PostLand.Infrastructure.AssemblyInfoInputs.cache
+D:\PostLand\PostLand.Domain\PostLand.Infrastructure\obj\Debug\net6.0\PostLand.Infrastructure.AssemblyInfo.cs
+D:\PostLand\PostLand.Domain\PostLand.Infrastructure\obj\Debug\net6.0\PostLand.Infrastructure.csproj.CoreCompileInputs.cache
