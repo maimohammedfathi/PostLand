@@ -1,12 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Microsoft.EntityFrameworkCore;
+using PostLand.Domain;
 
 namespace PostLandInfrastructure.Context
 {
-    internal class PostDbContext
+    public class PostDbContext : DbContext
     {
+        public PostDbContext(DbContextOptions<PostDbContext> options) : base(options) 
+        { }
+
+        public DbSet<Post> Posts { get; set; }
     }
+
+    
 }

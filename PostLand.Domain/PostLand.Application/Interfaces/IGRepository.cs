@@ -2,10 +2,21 @@
 {
     public interface IGRepository<T> where T : class
     {
-        Task<T> GetById(Guid id);
-        Task<IReadOnlyList<T>> ListAll();
-        Task<T> Add(T entity);
-        Task<T> Update(T entity);
-        Task<T> Delete(Guid id);
+        #region Methods Get
+        Task<T> GetByIdAsync(Guid id);
+        Task<IReadOnlyList<T>> ListAllAsync();
+        #endregion
+
+        #region Methods Add
+        Task<T> AddAsync(T entity);
+        #endregion
+
+        #region Methods Update
+        Task UpdateAsync(T entity);
+        #endregion
+
+        #region Methods Delete
+        Task DeleteAsync(T entity);
+        #endregion
     }
 }
