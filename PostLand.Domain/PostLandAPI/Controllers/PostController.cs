@@ -19,17 +19,19 @@ namespace PostLandAPI.Controllers
         {
             _mediator = mediator;
         }
-        [HttpGet("All", Name = "GetAllPosts")]
+
+        [HttpGet("all", Name = "GetAllPosts")]
         public async Task<ActionResult<List<GetPostListViewModel>>> GetAllPosts()
         {
-            return await _mediator.Send(new GetPostListQuery());
+            var dtos = await _mediator.Send(new GetPostListQuery());
+            return Ok(dtos);
         }
 
-        [HttpPost("{id}", Name = "GetPostById")]
-        public async Task<ActionResult<GetPostDetialViewModel>> GetPostById(Guid Id)
+        [HttpGet("{id}", Name = "GetPostById")]
+        public async Task<ActionResult<GetPostDetialViewModel>> GetPostById(Guid id)
         {
-            var getEventDetailQuery = new GetPostDetailsQuery() { PostId = Id };
-            return await _mediator.Send(getEventDetailQuery);
+            var getEventDetailQuery = new GetPostDetailsQuery() { PostId = id };
+            return Ok(await _mediator.Send(getEventDetailQuery));
         }
 
         [HttpPost(Name = "AddPost")]

@@ -1,0 +1,21 @@
+{
+  "categories": [
+    {
+      "id": "B0788D2F-8003-43C1-92A4-EDC76A7C5DDE",
+      "name": "Technology"
+    },
+    {
+      "id": "6313179F-7837-473A-A4D5-A5571B43E6A6",
+      "name": "Action"
+    }
+  ],
+  "posts": [
+    {
+      "id": "A1A6A7E2-3C2F-4A94-B72C-9D46818A6F10",
+      "title": "Introduction to CQRS and Mediator Patterns",
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit...",
+      "imageUrl": "https://api.khalidessaadani.com/uploads/articles_bg.jpg",
+      "categoryId": "B0788D2F-8003-43C1-92A4-EDC76A7C5DDE"
+    }
+  ]
+}

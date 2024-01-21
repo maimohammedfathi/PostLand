@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Migrations;
 using PostLand.Domain;
+using PostLandInfrastructure.Seed;
 using System.Reflection;
 
 namespace PostLandInfrastructure.Context
@@ -18,27 +19,20 @@ namespace PostLandInfrastructure.Context
         //{
         //    modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
         //}
-
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            var categoryGuid = Guid.Parse("{B0788D2F-8003-43C1-92A4-EDC76A7C5DDE}");
-            var postGuid = Guid.Parse("{6313179F-7837-473A-A4D5-A5571B43E6A6}");
-            modelBuilder.Entity<Category>().HasData(new Category
-            {
-                Id = categoryGuid,
-                Name = "Technology"
-            });
+            modelBuilder.Entity<Category>()
+                .Property(c => c.Id)
+                .ValueGeneratedOnAdd();
 
-            modelBuilder.Entity<Post>().HasData(new Post
-            {
-                Id = postGuid,
-                Title = "Introduction to CQRS and Mediator Patterns",
-                Content = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
-                ImagUrl = "https://api.khalidessaadani.com/uploads/articles_bg.jpg",
-                CategoryId = categoryGuid
-            });
+            modelBuilder.Entity<Post>()
+                .Property(p => p.Id)
+                .ValueGeneratedOnAdd();
 
+            modelBuilder.SeedData();
         }
+
+    }   
 
         //public bool AllMigrationApplied()
         //{
@@ -52,16 +46,13 @@ namespace PostLandInfrastructure.Context
         //    return !total.Except(applied).Any();
         //}
 
-        public async Task<int> SaveChangesAsync()
-        {
-            return await base.SaveChangesAsync();
-        }
+        //public async Task<int> SaveChangesAsync()
+        //{
+        //    return await base.SaveChangesAsync();
+        //}
 
-        public void Migrate()
-        {
-            Database.Migrate();
-        }
-    }
-
-    
+        //public void Migrate()
+        //{
+        //    Database.Migrate();
+        //} 
 }
