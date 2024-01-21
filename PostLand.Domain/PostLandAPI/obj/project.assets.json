@@ -31,6 +31,32 @@
           "lib/netstandard2.1/AutoMapper.Extensions.Microsoft.DependencyInjection.dll": {}
         }
       },
+      "FluentValidation/11.9.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/FluentValidation.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/FluentValidation.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Humanizer.Core/2.8.26": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/_._": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Humanizer.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "MediatR/12.2.0": {
         "type": "package",
         "dependencies": {
@@ -173,6 +199,26 @@
           "lib/netstandard2.0/_._": {}
         }
       },
+      "Microsoft.EntityFrameworkCore.Design/6.0.26": {
+        "type": "package",
+        "dependencies": {
+          "Humanizer.Core": "2.8.26",
+          "Microsoft.EntityFrameworkCore.Relational": "6.0.26"
+        },
+        "compile": {
+          "lib/net6.0/_._": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Microsoft.EntityFrameworkCore.Design.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "build/net6.0/Microsoft.EntityFrameworkCore.Design.props": {}
+        }
+      },
       "Microsoft.EntityFrameworkCore.Relational/6.0.26": {
         "type": "package",
         "dependencies": {
@@ -270,11 +316,10 @@
           }
         }
       },
-      "Microsoft.Extensions.DependencyInjection/6.0.1": {
+      "Microsoft.Extensions.DependencyInjection/7.0.0": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "6.0.0",
-          "System.Runtime.CompilerServices.Unsafe": "6.0.0"
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "7.0.0"
         },
         "compile": {
           "lib/net6.0/Microsoft.Extensions.DependencyInjection.dll": {
@@ -287,7 +332,7 @@
           }
         },
         "build": {
-          "buildTransitive/netcoreapp3.1/_._": {}
+          "buildTransitive/net6.0/_._": {}
         }
       },
       "Microsoft.Extensions.DependencyInjection.Abstractions/8.0.0": {
@@ -889,6 +934,7 @@
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "12.0.1",
+          "FluentValidation": "11.9.0",
           "MediatR": "12.2.0",
           "PostLandDomain": "1.0.0"
         },
@@ -915,6 +961,7 @@
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "6.0.26",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.26",
+          "Microsoft.Extensions.DependencyInjection": "7.0.0",
           "PostLandApplication": "1.0.0"
         },
         "compile": {
@@ -954,6 +1001,47 @@
         "automapper.extensions.microsoft.dependencyinjection.nuspec",
         "icon.png",
         "lib/netstandard2.1/AutoMapper.Extensions.Microsoft.DependencyInjection.dll"
+      ]
+    },
+    "FluentValidation/11.9.0": {
+      "sha512": "VneVlTvwYDkfHV5av3QrQ0amALgrLX6LV94wlYyEsh0B/klJBW7C8y2eAtj5tOZ3jH6CAVpr4s1ZGgew/QWyig==",
+      "type": "package",
+      "path": "fluentvalidation/11.9.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "fluent-validation-icon.png",
+        "fluentvalidation.11.9.0.nupkg.sha512",
+        "fluentvalidation.nuspec",
+        "lib/net5.0/FluentValidation.dll",
+        "lib/net5.0/FluentValidation.xml",
+        "lib/net6.0/FluentValidation.dll",
+        "lib/net6.0/FluentValidation.xml",
+        "lib/net7.0/FluentValidation.dll",
+        "lib/net7.0/FluentValidation.xml",
+        "lib/net8.0/FluentValidation.dll",
+        "lib/net8.0/FluentValidation.xml",
+        "lib/netstandard2.0/FluentValidation.dll",
+        "lib/netstandard2.0/FluentValidation.xml",
+        "lib/netstandard2.1/FluentValidation.dll",
+        "lib/netstandard2.1/FluentValidation.xml"
+      ]
+    },
+    "Humanizer.Core/2.8.26": {
+      "sha512": "OiKusGL20vby4uDEswj2IgkdchC1yQ6rwbIkZDVBPIR6al2b7n3pC91elBul9q33KaBgRKhbZH3+2Ur4fnWx2A==",
+      "type": "package",
+      "path": "humanizer.core/2.8.26",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "humanizer.core.2.8.26.nupkg.sha512",
+        "humanizer.core.nuspec",
+        "lib/netstandard1.0/Humanizer.dll",
+        "lib/netstandard1.0/Humanizer.xml",
+        "lib/netstandard2.0/Humanizer.dll",
+        "lib/netstandard2.0/Humanizer.xml",
+        "logo.png"
       ]
     },
     "MediatR/12.2.0": {
@@ -1183,6 +1271,21 @@
         "lib/netstandard2.0/_._",
         "microsoft.entityframeworkcore.analyzers.6.0.26.nupkg.sha512",
         "microsoft.entityframeworkcore.analyzers.nuspec"
+      ]
+    },
+    "Microsoft.EntityFrameworkCore.Design/6.0.26": {
+      "sha512": "SKcdA+0RtsfgbmafYNK5ej0Hm46IBlZrfnkn4RXPDwqWRkEV+tdO3FifZJlFnUgB3cG4feWd8TYZNPpT9ReCVg==",
+      "type": "package",
+      "path": "microsoft.entityframeworkcore.design/6.0.26",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "build/net6.0/Microsoft.EntityFrameworkCore.Design.props",
+        "lib/net6.0/Microsoft.EntityFrameworkCore.Design.dll",
+        "lib/net6.0/Microsoft.EntityFrameworkCore.Design.xml",
+        "microsoft.entityframeworkcore.design.6.0.26.nupkg.sha512",
+        "microsoft.entityframeworkcore.design.nuspec"
       ]
     },
     "Microsoft.EntityFrameworkCore.Relational/6.0.26": {
@@ -1501,27 +1604,31 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "Microsoft.Extensions.DependencyInjection/6.0.1": {
-      "sha512": "vWXPg3HJQIpZkENn1KWq8SfbqVujVD7S7vIAyFXXqK5xkf1Vho+vG0bLBCHxU36lD1cLLtmGpfYf0B3MYFi9tQ==",
+    "Microsoft.Extensions.DependencyInjection/7.0.0": {
+      "sha512": "elNeOmkeX3eDVG6pYVeV82p29hr+UKDaBhrZyWvWLw/EVZSYEkZlQdkp0V39k/Xehs2Qa0mvoCvkVj3eQxNQ1Q==",
       "type": "package",
-      "path": "microsoft.extensions.dependencyinjection/6.0.1",
+      "path": "microsoft.extensions.dependencyinjection/7.0.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/net461/Microsoft.Extensions.DependencyInjection.targets",
+        "buildTransitive/net462/_._",
+        "buildTransitive/net6.0/_._",
         "buildTransitive/netcoreapp2.0/Microsoft.Extensions.DependencyInjection.targets",
-        "buildTransitive/netcoreapp3.1/_._",
-        "lib/net461/Microsoft.Extensions.DependencyInjection.dll",
-        "lib/net461/Microsoft.Extensions.DependencyInjection.xml",
+        "lib/net462/Microsoft.Extensions.DependencyInjection.dll",
+        "lib/net462/Microsoft.Extensions.DependencyInjection.xml",
         "lib/net6.0/Microsoft.Extensions.DependencyInjection.dll",
         "lib/net6.0/Microsoft.Extensions.DependencyInjection.xml",
+        "lib/net7.0/Microsoft.Extensions.DependencyInjection.dll",
+        "lib/net7.0/Microsoft.Extensions.DependencyInjection.xml",
         "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.dll",
         "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.xml",
         "lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.dll",
         "lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.xml",
-        "microsoft.extensions.dependencyinjection.6.0.1.nupkg.sha512",
+        "microsoft.extensions.dependencyinjection.7.0.0.nupkg.sha512",
         "microsoft.extensions.dependencyinjection.nuspec",
         "useSharedDesignerContext.txt"
       ]
@@ -2512,6 +2619,7 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "Microsoft.EntityFrameworkCore.Design >= 6.0.26",
       "PostLandApplication >= 1.0.0",
       "PostLandInfrastructure >= 1.0.0",
       "Swashbuckle.AspNetCore >= 6.5.0"
@@ -2569,6 +2677,12 @@
       "net6.0": {
         "targetAlias": "net6.0",
         "dependencies": {
+          "Microsoft.EntityFrameworkCore.Design": {
+            "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+            "suppressParent": "All",
+            "target": "Package",
+            "version": "[6.0.26, )"
+          },
           "Swashbuckle.AspNetCore": {
             "target": "Package",
             "version": "[6.5.0, )"

@@ -24,7 +24,7 @@ namespace PostLandApplication.Features.Posts.Commands.UpdatePost
         public async Task Handle(UpdatePostCommand request, CancellationToken cancellationToken)
         {
             Post post = _mapper.Map<Post>(request);
-            await _postReposirtory.Update(post);
+            await _postReposirtory.UpdateAsync(post);
             return;
         }
     }

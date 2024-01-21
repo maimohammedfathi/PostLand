@@ -7,8 +7,8 @@ using System.Threading.Tasks;
 
 namespace PostLandApplication.Features.Posts.Commands.DeletePost
 {
-    public class DeletePostCommand  : IRequest
+    public class DeletePostCommand : IRequest
     {
-        public Guid Id { get; set; }
+        public Guid PostId { get; set; }
     }
 }

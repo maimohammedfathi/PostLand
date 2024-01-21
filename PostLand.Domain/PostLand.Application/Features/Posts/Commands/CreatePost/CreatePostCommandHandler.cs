@@ -31,7 +31,7 @@ namespace PostLandApplication.Features.Posts.Commands.CreatePost
                 throw new Exception("Post in not valid");
             }
 
-            post = await _postRepositry.Add(post);
+            post = await _postRepositry.AddAsync(post);
             return post.Id;
         }
     }

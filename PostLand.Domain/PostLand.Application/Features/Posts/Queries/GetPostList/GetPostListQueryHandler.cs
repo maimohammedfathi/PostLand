@@ -22,7 +22,7 @@ namespace PostLandApplication.Features.Posts.Queries.GetPostList
 
         public async Task<List<GetPostListViewModel>> Handle(GetPostListQuery request, CancellationToken cancellationToken)
         {
-            var allPost = await _postRepository.GetAllPosts(true);
+            var allPost = await _postRepository.GetAllPostsAsync(true);
             return _mapper.Map<List<GetPostListViewModel>>(allPost);
         }
     }

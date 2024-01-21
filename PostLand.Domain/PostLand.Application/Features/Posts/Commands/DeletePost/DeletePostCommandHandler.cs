@@ -13,7 +13,7 @@ namespace PostLandApplication.Features.Posts.Commands.DeletePost
         private readonly IPostRepository _postRepository;
         public async Task Handle(DeletePostCommand request, CancellationToken cancellationToken)
         {
-            var post = await _postRepository.GetById(request.Id);
+            var post = await _postRepository.GetByIdAsync(request.PostId);
             if (post == null)
             {
                 throw new Exception("The post ID is notValid");

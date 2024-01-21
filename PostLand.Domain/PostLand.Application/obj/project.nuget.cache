@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "xB/uXfk6Z4SZEhMyA4yQu9JbZDLxz74Prl3K/sawiD4xciQbdTy0/IlJeaEIrd7oHeNlweq6lwK+agADuJ1a5A==",
+  "dgSpecHash": "QSSjaUYygPua9j0L7CnMuwyguzLKCmHyImq/xqlfETZm2wW9KNgl5XVQRyhDeug4ccur//8maNLn6kSW7wktZQ==",
   "success": true,
   "projectFilePath": "D:\\PostLand\\PostLand.Domain\\PostLand.Application\\PostLandApplication.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\iTi\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\iTi\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
+    "C:\\Users\\iTi\\.nuget\\packages\\fluentvalidation\\11.9.0\\fluentvalidation.11.9.0.nupkg.sha512",
     "C:\\Users\\iTi\\.nuget\\packages\\mediatr\\12.2.0\\mediatr.12.2.0.nupkg.sha512",
     "C:\\Users\\iTi\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
     "C:\\Users\\iTi\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

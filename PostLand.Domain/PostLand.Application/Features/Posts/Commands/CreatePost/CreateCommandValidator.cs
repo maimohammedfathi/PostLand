@@ -19,7 +19,7 @@ namespace PostLandApplication.Features.Posts.Commands.CreatePost
 
             RuleFor(p => p.Content)
                 .NotEmpty()
-                .NotNull()
+                .NotNull();
         }
     }
 }

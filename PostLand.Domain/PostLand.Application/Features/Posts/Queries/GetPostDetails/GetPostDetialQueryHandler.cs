@@ -17,7 +17,7 @@ namespace PostLandApplication.Features.Posts.Queries.GetPostDetails
 
         public async Task<GetPostDetialViewModel> Handle(GetPostDetailsQuery request, CancellationToken cancellationToken)
         {
-            var post = _postRepository.GetPostById(request.PostId, true);
+            var post = _postRepository.GetPostByIdAsync(request.PostId, true);
             return _mapper.Map<GetPostDetialViewModel>(post);
         }
     }
