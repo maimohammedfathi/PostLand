@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "Ch4wGxiOMmk85F7h6LjvkWL2VBxabFo8GQJZXfvLuITDbIYz9Qqw8no41W9GLAXk73ALjoL9VKEZA4pXM+CA0g==",
+  "dgSpecHash": "3uBveKRKIs2Ty+IVW2Zvc+ZPyb0/qKb16bAURlcKMyCFM5phF9P8VBY3lBhkHNX/HccPjxoryaipvhLZ81ruiQ==",
   "success": true,
   "projectFilePath": "D:\\PostLand\\PostLand.Domain\\PostLandAPI\\PostLandAPI.csproj",
   "expectedPackageFiles": [
@@ -23,7 +23,7 @@
     "C:\\Users\\iTi\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\6.0.0\\microsoft.extensions.caching.abstractions.6.0.0.nupkg.sha512",
     "C:\\Users\\iTi\\.nuget\\packages\\microsoft.extensions.caching.memory\\6.0.1\\microsoft.extensions.caching.memory.6.0.1.nupkg.sha512",
     "C:\\Users\\iTi\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\6.0.0\\microsoft.extensions.configuration.abstractions.6.0.0.nupkg.sha512",
-    "C:\\Users\\iTi\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\7.0.0\\microsoft.extensions.dependencyinjection.7.0.0.nupkg.sha512",
+    "C:\\Users\\iTi\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\6.0.1\\microsoft.extensions.dependencyinjection.6.0.1.nupkg.sha512",
     "C:\\Users\\iTi\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
     "C:\\Users\\iTi\\.nuget\\packages\\microsoft.extensions.logging\\6.0.0\\microsoft.extensions.logging.6.0.0.nupkg.sha512",
     "C:\\Users\\iTi\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\6.0.0\\microsoft.extensions.logging.abstractions.6.0.0.nupkg.sha512",

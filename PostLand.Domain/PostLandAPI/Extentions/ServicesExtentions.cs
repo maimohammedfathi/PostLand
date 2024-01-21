@@ -28,41 +28,39 @@ namespace PostLandAPI.Extentions
                 options.EnableSensitiveDataLogging(true);   
                 options.UseQueryTrackingBehavior(QueryTrackingBehavior.NoTracking);
             });
-            service.AddDbConfig(configuration);
-            service.AddUnitOfWorkRepository();
         }
 
-        public static void AddCorsConfig(this IServiceCollection service) 
-        {
-            service.AddCors(options =>
-            {
-                options.AddPolicy("AllowCors",
-                    builder =>
-                    {
-                        builder
-                        .AllowAnyHeader()
-                        .AllowAnyMethod()
-                        .WithOrigins("http://localhost:3000")
-                        .AllowAnyOrigin()
-                        .SetIsOriginAllowed((host) => true)
-                        .AllowCredentials();
+        //public static void AddCorsConfig(this IServiceCollection service) 
+        //{
+        //    service.AddCors(options =>
+        //    {
+        //        options.AddPolicy("AllowCors",
+        //            builder =>
+        //            {
+        //                builder
+        //                .AllowAnyHeader()
+        //                .AllowAnyMethod()
+        //                .WithOrigins("http://localhost:3000")
+        //                .AllowAnyOrigin()
+        //                .SetIsOriginAllowed((host) => true)
+        //                .AllowCredentials();
 
-                    });
-            });
-        }
+        //            });
+        //    });
+        //}
 
-        public static void ApplyAutoMigration(this WebApplication app)
-        {
-            using (var serviceScope = app.Services.CreateScope())
-            {
-                var DbContext = serviceScope.ServiceProvider.GetRequiredService<PostDbContext>();
-                var serviceProvider = serviceScope.ServiceProvider;
-                if (!serviceScope.ServiceProvider.GetService<PostDbContext>().AllMigrationApplied())
-                {
-                    serviceScope.ServiceProvider.GetService<PostDbContext>().Migrate();
-                }
-            }
-        }
+        //public static void ApplyAutoMigration(this WebApplication app)
+        //{
+        //    using (var serviceScope = app.Services.CreateScope())
+        //    {
+        //        var DbContext = serviceScope.ServiceProvider.GetRequiredService<PostDbContext>();
+        //        var serviceProvider = serviceScope.ServiceProvider;
+        //        if (!serviceScope.ServiceProvider.GetService<PostDbContext>().AllMigrationApplied())
+        //        {
+        //            serviceScope.ServiceProvider.GetService<PostDbContext>().Migrate();
+        //        }
+        //    }
+        //}
 
 
     }

@@ -8,7 +8,6 @@ D:\PostLand\PostLand.Domain\PostLandAPI\bin\Debug\net6.0\Microsoft.EntityFramewo
 D:\PostLand\PostLand.Domain\PostLandAPI\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
 D:\PostLand\PostLand.Domain\PostLandAPI\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
 D:\PostLand\PostLand.Domain\PostLandAPI\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
-D:\PostLand\PostLand.Domain\PostLandAPI\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
 D:\PostLand\PostLand.Domain\PostLandAPI\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
 D:\PostLand\PostLand.Domain\PostLandAPI\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
 D:\PostLand\PostLand.Domain\PostLandAPI\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
@@ -20,6 +19,7 @@ D:\PostLand\PostLand.Domain\PostLandAPI\bin\Debug\net6.0\Humanizer.dll
 D:\PostLand\PostLand.Domain\PostLandAPI\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
 D:\PostLand\PostLand.Domain\PostLandAPI\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
 D:\PostLand\PostLand.Domain\PostLandAPI\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+D:\PostLand\PostLand.Domain\PostLandAPI\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
 D:\PostLand\PostLand.Domain\PostLandAPI\bin\Debug\net6.0\Microsoft.Identity.Client.dll
 D:\PostLand\PostLand.Domain\PostLandAPI\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
 D:\PostLand\PostLand.Domain\PostLandAPI\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
@@ -69,3 +69,12 @@ D:\PostLand\PostLand.Domain\PostLandAPI\obj\Debug\net6.0\scopedcss\bundle\PostLa
 D:\PostLand\PostLand.Domain\PostLandAPI\obj\Debug\net6.0\PostLandAPI.dll
 D:\PostLand\PostLand.Domain\PostLandAPI\obj\Debug\net6.0\refint\PostLandAPI.dll
 D:\PostLand\PostLand.Domain\PostLandAPI\obj\Debug\net6.0\PostLandAPI.pdb
+D:\PostLand\PostLand.Domain\PostLandAPI\bin\Debug\net6.0\appsettings.Development.json
+D:\PostLand\PostLand.Domain\PostLandAPI\bin\Debug\net6.0\appsettings.json
+D:\PostLand\PostLand.Domain\PostLandAPI\bin\Debug\net6.0\PostLandAPI.exe
+D:\PostLand\PostLand.Domain\PostLandAPI\bin\Debug\net6.0\PostLandAPI.deps.json
+D:\PostLand\PostLand.Domain\PostLandAPI\bin\Debug\net6.0\PostLandAPI.runtimeconfig.json
+D:\PostLand\PostLand.Domain\PostLandAPI\bin\Debug\net6.0\PostLandAPI.pdb
+D:\PostLand\PostLand.Domain\PostLandAPI\obj\Debug\net6.0\PostLandAPI.csproj.CopyComplete
+D:\PostLand\PostLand.Domain\PostLandAPI\obj\Debug\net6.0\PostLandAPI.genruntimeconfig.cache
+D:\PostLand\PostLand.Domain\PostLandAPI\obj\Debug\net6.0\ref\PostLandAPI.dll
