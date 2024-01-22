@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using PostLand.Infrastructure.UnitOfWork;
 using PostLandApplication;
 using PostLandApplication.Interfaces;
 using PostLandInfrastructure.Context;
@@ -11,6 +12,7 @@ namespace PostLandAPI.Extentions
     {
         public static void AddUnitOfWorkRepository(this IServiceCollection service)
         {
+            service.AddScoped(typeof(IUnitOfWork), typeof(UnitOfWork));
             service.AddScoped(typeof(IGRepository<>), typeof(BaseRepository<>));
             service.AddScoped<IPostRepository, PostRepository>();
             service.AddAutoMapper(typeof(ApplicationLayer));

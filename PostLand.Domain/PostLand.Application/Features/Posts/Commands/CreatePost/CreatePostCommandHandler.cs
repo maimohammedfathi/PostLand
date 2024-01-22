@@ -13,28 +13,42 @@ namespace PostLandApplication.Features.Posts.Commands.CreatePost
     public class CreatePostCommandHandler : IRequestHandler<CreatePostCommand, Guid>
     {
         private readonly IPostRepository _postRepository;
+        private readonly IUnitOfWork _unitOfWork;
         private readonly IMapper _mapper;
 
-        public CreatePostCommandHandler(IPostRepository postRepository, IMapper mapper)
+        public CreatePostCommandHandler(IPostRepository postRepository, IMapper mapper, IUnitOfWork unitOfWork)
         {
             _postRepository = postRepository;
             _mapper = mapper;
+            _unitOfWork=unitOfWork;
         }
         public async Task<Guid> Handle(CreatePostCommand request, CancellationToken cancellationToken)
         {
-            Post post = _mapper.Map<Post>(request);
-
-            CreateCommandValidator validator = new CreateCommandValidator();
-            var result = await validator.ValidateAsync(request);
-
-            if (result.Errors.Any())
+            try
             {
-                throw new Exception("Post is not valid");
+                Post post = _mapper.Map<Post>(request);
+
+                CreateCommandValidator validator = new CreateCommandValidator();
+                var result = await validator.ValidateAsync(request);
+
+                if (result.Errors.Any())
+                {
+                    throw new Exception("Post is not valid");
+                }
+
+                post = await _postRepository.AddAsync(post);
+
+                await _unitOfWork.SaveChangesAsync();
+
+                _unitOfWork.Commit();
+
+                return post.Id;
             }
-
-            post = await _postRepository.AddAsync(post);
-
-            return post.Id;
+            catch (Exception)
+            {
+                _unitOfWork.RollBack();
+                throw;
+            }
         }
     }
 }
